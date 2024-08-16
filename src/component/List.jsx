@@ -30,6 +30,7 @@ export const List = ({ text }) => {
               handleClick={() => deleteTask(index)}
               width={"50px"}
               text={"dlt"}
+              a
             />
           </div>
         );
