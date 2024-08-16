@@ -34,10 +34,11 @@
   gap: 20px;
 }
 .buttonAdd {
-  width: 120px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   border-radius: 8px;
   border: none;
+  color: black;
 }
 .buttonAdd:hover {
   background-color: black;
@@ -65,4 +66,9 @@
   background-color: black;
   border-radius: 5px;
   border: 1px solid white;
+}
+.return {
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }

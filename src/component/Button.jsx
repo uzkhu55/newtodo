@@ -1,6 +1,6 @@
-export const Button = ({ text, handleClick }) => {
+export const Button = ({ text, handleClick, width }) => {
   return (
-    <button className="buttonAdd" onClick={handleClick}>
+    <button className="buttonAdd" width={width} onClick={handleClick}>
       {text}
     </button>
   );

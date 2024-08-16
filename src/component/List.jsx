@@ -9,6 +9,10 @@ export const List = ({ text }) => {
   const handleClick = () => {
     setNewetask([...newetask, neewtask]);
   };
+  const deleteTask = (index) => {
+    const updatedTasks = newetask.filter((_, i) => i !== index);
+    setNewetask(updatedTasks);
+  };
   return (
     <div className="list">
       <Paragraph fontSize={"24px"} text={text} color={"white"} />
@@ -22,6 +26,11 @@ export const List = ({ text }) => {
         return (
           <div draggable="true" className="return" key={index}>
             {el}
+            <Button
+              handleClick={() => deleteTask(index)}
+              width={"50px"}
+              text={"dlt"}
+            />
           </div>
         );
       })}
